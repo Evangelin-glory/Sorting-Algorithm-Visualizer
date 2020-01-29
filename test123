@@ -1,0 +1,12 @@
+Counting_sort
+
+Assumption: If the items to be sorted are Integers with small range, we can count the frequency of occurrence of each Integer (in that small range) and then loop through that small range to output the items in sorted order.
+
+
+Try Counting Sort on the example array above where all Integers are within [1..9], thus we just need to count how many times Integer 1 appears, Integer 2 appears, ..., Integer 9 appears, and then loop through 1 to 9 to print out x copies of Integer y if frequency[y] = x.
+
+
+The time complexity is O(N) to count the frequencies and O(N+k) to print out the output in sorted order where k is the range of the input Integers, which is 9-1+1 = 9 in this example. The time complexity of Counting Sort is thus O(N+k), which is O(N) if k is small.
+
+
+We will not be able to do the counting part of Counting Sort when k is relatively big due to memory limitation, as we need to store frequencies of those k integers.
